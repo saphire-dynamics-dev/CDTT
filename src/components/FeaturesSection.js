@@ -133,10 +133,10 @@ export default function FeaturesSection() {
             From standard car licenses to specialized commercial vehicle certifications - we cover all your driving needs
           </p>
 
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="flex flex-col lg:grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             {/* Animated Image Container */}
-            <div className="relative">
-              <div className="w-80 h-80 mx-auto relative">
+            <div className="relative order-2 lg:order-1">
+              <div className="w-64 h-64 sm:w-72 sm:h-72 md:w-80 md:h-80 mx-auto relative">
                 {testTypes.map((test, index) => (
                   <div
                     key={test.id}
@@ -146,7 +146,7 @@ export default function FeaturesSection() {
                         : 'opacity-0 scale-95 rotate-12'
                     }`}
                   >
-                    <div className="w-full h-full rounded-full overflow-hidden border-8 border-white shadow-2xl">
+                    <div className="w-full h-full rounded-full overflow-hidden border-4 sm:border-6 lg:border-8 border-white shadow-2xl">
                       <img 
                         src={test.image} 
                         alt={test.title}
@@ -154,15 +154,15 @@ export default function FeaturesSection() {
                       />
                     </div>
                     {/* Floating icon */}
-                    <div className="absolute -bottom-4 -right-4 w-16 h-16 bg-[#FF6B35] rounded-full flex items-center justify-center shadow-lg">
-                      <test.icon className="w-8 h-8 text-white" />
+                    <div className="absolute -bottom-2 -right-2 sm:-bottom-3 sm:-right-3 lg:-bottom-4 lg:-right-4 w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 bg-[#FF6B35] rounded-full flex items-center justify-center shadow-lg">
+                      <test.icon className="w-6 h-6 sm:w-7 sm:h-7 lg:w-8 lg:h-8 text-white" />
                     </div>
                   </div>
                 ))}
               </div>
               
               {/* Progress indicators */}
-              <div className="flex justify-center mt-8 space-x-3">
+              <div className="flex justify-center mt-6 lg:mt-8 space-x-3">
                 {testTypes.map((_, index) => (
                   <button
                     key={index}
@@ -178,31 +178,33 @@ export default function FeaturesSection() {
             </div>
 
             {/* Content */}
-            <div className="space-y-8">
-              {testTypes.map((test, index) => (
-                <div
-                  key={test.id}
-                  className={`transition-all duration-500 ${
-                    index === activeFeature 
-                      ? 'opacity-100 translate-x-0' 
-                      : 'opacity-30 translate-x-4'
-                  }`}
-                >
-                  <div className="flex items-start space-x-4">
-                    <div className={`w-12 h-12 rounded-xl flex items-center justify-center transition-all duration-300 ${
+            <div className="w-full order-1 lg:order-2">
+              <div className="space-y-6 lg:space-y-8 max-w-md mx-auto lg:max-w-none lg:mx-0">
+                {testTypes.map((test, index) => (
+                  <div
+                    key={test.id}
+                    className={`transition-all duration-500 ${
                       index === activeFeature 
-                        ? 'bg-[#FF6B35] text-white scale-110' 
-                        : 'bg-gray-200 text-gray-500'
-                    }`}>
-                      <test.icon className="w-6 h-6" />
-                    </div>
-                    <div className="flex-1">
-                      <h4 className="text-xl font-bold text-gray-800 mb-2">{test.title}</h4>
-                      <p className="text-gray-600 leading-relaxed">{test.desc}</p>
+                        ? 'opacity-100 translate-x-0' 
+                        : 'opacity-30 translate-x-4'
+                    }`}
+                  >
+                    <div className="flex items-start space-x-4 text-center lg:text-left">
+                      <div className={`flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 rounded-xl flex items-center justify-center transition-all duration-300 ${
+                        index === activeFeature 
+                          ? 'bg-[#FF6B35] text-white scale-110' 
+                          : 'bg-gray-200 text-gray-500'
+                      }`}>
+                        <test.icon className="w-5 h-5 sm:w-6 sm:h-6" />
+                      </div>
+                      <div className="flex-1 min-w-0">
+                        <h4 className="text-lg sm:text-xl font-bold text-gray-800 mb-2">{test.title}</h4>
+                        <p className="text-sm sm:text-base text-gray-600 leading-relaxed">{test.desc}</p>
+                      </div>
                     </div>
                   </div>
-                </div>
-              ))}
+                ))}
+              </div>
             </div>
           </div>
         </div>

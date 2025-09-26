@@ -43,8 +43,9 @@ export default function Navbar() {
           : 'bg-transparent'
       }`}
     >
-      <div className="max-w-7xl mx-auto px-6">
-        <div className="grid grid-cols-3 items-center h-16">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
+        {/* Desktop Layout - 3 column grid */}
+        <div className="hidden md:grid grid-cols-3 items-center h-16">
           {/* Left Column - Logo */}
           <div className="flex justify-start">
             <a href="#hero" className="flex items-center space-x-2">
@@ -60,7 +61,7 @@ export default function Navbar() {
           </div>
 
           {/* Center Column - Navigation Items */}
-          <div className="hidden md:flex items-center justify-center space-x-8">
+          <div className="flex items-center justify-center space-x-8">
             {navItems.filter(item => item.name !== 'Contact').map((item, index) => (
               <a
                 key={index}
@@ -76,12 +77,12 @@ export default function Navbar() {
             ))}
           </div>
 
-          {/* Right Column - CTA Button and Mobile Menu */}
+          {/* Right Column - CTA Button */}
           <div className="flex items-center justify-end space-x-4">
-            {/* Contact link - desktop only */}
+            {/* Contact link */}
             <a
               href="#footer"
-              className={`hidden md:block font-medium transition-all duration-300 hover:scale-105 ${
+              className={`font-medium transition-all duration-300 hover:scale-105 ${
                 isScrolled 
                   ? 'text-gray-700 hover:text-[#FF6B35]' 
                   : 'text-white hover:text-[#FF8C42]'
@@ -90,10 +91,10 @@ export default function Navbar() {
               Contact
             </a>
             
-            {/* Get Started Button - desktop only */}
+            {/* Get Started Button */}
             <a
               href="#apply"
-              className={`hidden md:block px-6 py-2 rounded-full font-semibold transition-all duration-300 hover:scale-105 ${
+              className={`px-6 py-2 rounded-full font-semibold transition-all duration-300 hover:scale-105 ${
                 isScrolled
                   ? 'bg-[#FF6B35] text-white hover:bg-[#FF8C42]'
                   : 'bg-white/20 backdrop-blur-sm text-white border border-white/30 hover:bg-white hover:text-[#FF6B35]'
@@ -101,18 +102,35 @@ export default function Navbar() {
             >
               Get Started
             </a>
+          </div>
+        </div>
 
-            {/* Mobile menu button */}
-            <div className="md:hidden">
-              <button
-                onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                className={`p-2 rounded-md transition-colors duration-300 ${
-                  isScrolled ? 'text-gray-700' : 'text-white'
-                }`}
-              >
-                {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
-              </button>
-            </div>
+        {/* Mobile Layout - Two column grid */}
+        <div className="md:hidden grid grid-cols-2 items-center h-16">
+          {/* Left Column - Logo */}
+          <div className="flex justify-start">
+            <a href="#hero" className="flex items-center space-x-2">
+              <div className="w-8 h-8 bg-[#FF6B35] rounded-full flex items-center justify-center">
+                <span className="text-white font-bold text-sm">C</span>
+              </div>
+              <span className={`font-bold text-xl transition-colors duration-300 ${
+                isScrolled ? 'text-[#FF6B35]' : 'text-white'
+              }`}>
+                CDTT
+              </span>
+            </a>
+          </div>
+
+          {/* Right Column - Mobile menu button */}
+          <div className="flex justify-end">
+            <button
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              className={`p-2 rounded-md transition-colors duration-300 ${
+                isScrolled ? 'text-gray-700' : 'text-white'
+              }`}
+            >
+              {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+            </button>
           </div>
         </div>
 
