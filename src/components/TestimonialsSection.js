@@ -137,7 +137,7 @@ export default function TestimonialsSection() {
   const renderTestimonialCard = (testimonial, index) => (
     <div key={index} className="testimonial-card flex-shrink-0 w-80 bg-white rounded-2xl p-6 shadow-sm border border-gray-100 mx-3">
       {/* Quote mark */}
-      <div className="text-4xl text-[#FF6B35] mb-4 font-serif">"</div>
+      <div className="text-4xl text-[#FF6B35] mb-4 font-serif">&quot;</div>
       
       {/* Rating */}
       <div className="flex mb-4">

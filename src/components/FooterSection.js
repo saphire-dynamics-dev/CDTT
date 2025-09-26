@@ -75,7 +75,7 @@ export default function FooterSection() {
               <span className="text-2xl font-bold text-white">CDTT</span>
             </div>
             <p className="text-gray-300 mb-6 leading-relaxed max-w-md">
-              Nigeria's premier computerized driver testing platform. Modern, fair, and designed for the digital age.
+              Nigeria&apos;s premier computerized driver testing platform. Modern, fair, and designed for the digital age.
             </p>
             <div className="space-y-4">
               <div className="flex items-center gap-4">

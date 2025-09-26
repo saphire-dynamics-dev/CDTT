@@ -90,7 +90,7 @@ export default function HeroSection() {
         </h1>
         
         <p className="subheadline text-lg md:text-xl lg:text-2xl text-white/90 mb-8 max-w-3xl mx-auto leading-relaxed">
-          Experience Nigeria's most advanced computerized driver testing platform. Fair, transparent, and designed for the modern Nigerian driver.
+          Experience Nigeria&apos;s most advanced computerized driver testing platform. Fair, transparent, and designed for the modern Nigerian driver.
         </p>
 
         {/* Stats */}

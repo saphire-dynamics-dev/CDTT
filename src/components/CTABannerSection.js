@@ -44,7 +44,7 @@ export default function CTABannerSection() {
         
         {/* Description */}
         <p className="text-xl text-gray-600 mb-12 max-w-2xl mx-auto leading-relaxed">
-          Join the digital revolution in driver testing. Experience Nigeria's most advanced computerized platform wherever or whenever you want!
+          Join the digital revolution in driver testing. Experience Nigeria&apos;s most advanced computerized platform wherever or whenever you want!
         </p>
 
         {/* CTA Button */}

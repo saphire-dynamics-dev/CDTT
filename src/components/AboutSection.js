@@ -51,7 +51,7 @@ export default function AboutSection() {
           Why Computerized Testing Matters
         </h2>
         <p className="about-paragraph text-xl text-gray-600 text-center mb-16 max-w-3xl mx-auto">
-          Transforming Nigeria's driving education with cutting-edge technology, transparency, and fairness for every citizen.
+          Transforming Nigeria&apos;s driving education with cutting-edge technology, transparency, and fairness for every citizen.
         </p>
 
         {/* First Row - Main Content */}
@@ -61,14 +61,14 @@ export default function AboutSection() {
               The Digital Revolution in Driver Education
             </h3>
             <p className="about-paragraph text-lg leading-relaxed text-gray-700">
-              Nigeria's transportation landscape is evolving rapidly. Our computerized driver testing system represents a paradigm shift towards transparency, efficiency, and fairness in how we assess and certify drivers across the nation.
+              Nigeria&apos;s transportation landscape is evolving rapidly. Our computerized driver testing system represents a paradigm shift towards transparency, efficiency, and fairness in how we assess and certify drivers across the nation.
             </p>
             <p className="about-paragraph text-lg leading-relaxed text-gray-700">
-              By eliminating human bias and standardizing the testing process, we're creating a merit-based system where every Nigerian has an equal opportunity to demonstrate their driving competency.
+              By eliminating human bias and standardizing the testing process, we&apos;re creating a merit-based system where every Nigerian has an equal opportunity to demonstrate their driving competency.
             </p>
             <div className="about-paragraph bg-[#FF6B35]/10 p-6 rounded-xl border-l-4 border-[#FF6B35]">
               <p className="text-gray-800 font-semibold">
-                "This system doesn't just test drivers—it builds confidence in our transportation infrastructure."
+                &quot;This system doesn&apos;t just test drivers—it builds confidence in our transportation infrastructure.&quot;
               </p>
             </div>
           </div>
@@ -95,7 +95,7 @@ export default function AboutSection() {
               Our automated system eliminates opportunities for bribery and favoritism, ensuring every test is conducted fairly and impartially.
             </p>
             <blockquote className="border-l-3 border-[#FF6B35] pl-4 text-sm italic text-gray-700">
-              "Finally, a system where merit determines success, not money."
+              &quot;Finally, a system where merit determines success, not money.&quot;
             </blockquote>
           </div>
 
@@ -103,7 +103,7 @@ export default function AboutSection() {
           <div className="about-paragraph bg-[#FF6B35]/5 rounded-xl p-6 border border-[#FF6B35]/20">
             <h4 className="text-lg font-semibold text-gray-800 mb-4">What People Are Saying</h4>
             <blockquote className="text-gray-700 mb-4 italic">
-              "I took my test last month and couldn't believe how smooth the process was. No stress, no confusion, just fair assessment."
+              &quot;I took my test last month and couldn&apos;t believe how smooth the process was. No stress, no confusion, just fair assessment.&quot;
             </blockquote>
             <cite className="text-sm text-[#FF6B35] font-medium">- Amina K., Lagos</cite>
           </div>
