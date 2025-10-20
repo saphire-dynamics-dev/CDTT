@@ -71,9 +71,11 @@ export default function FooterSection() {
         <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-10 mb-16">
           <div className="lg:col-span-2">
             <div className="flex items-center gap-3 mb-6">
-              <div className="w-10 h-10 bg-[#FF6B35] rounded-xl flex items-center justify-center">
-                <span className="text-white font-bold text-lg">C</span>
-              </div>
+              <img 
+                src="/cdtlogo2.png" 
+                alt="CDTT Logo" 
+                className="w-10 h-10 object-cover rounded-full border-2 border-white/20"
+              />
               <span className="text-2xl font-bold text-white">CDTT</span>
             </div>
             <p className="text-gray-300 mb-6 leading-relaxed max-w-md">

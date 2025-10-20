@@ -49,9 +49,11 @@ export default function Navbar() {
           {/* Left Column - Logo */}
           <div className="flex justify-start">
             <a href="#hero" className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-[#FF6B35] rounded-full flex items-center justify-center">
-                <span className="text-white font-bold text-sm">C</span>
-              </div>
+              <img 
+                src="/cdtlogo2.png" 
+                alt="CDTT Logo" 
+                className="w-12 h-12 object-cover rounded-full border-2 border-white/20"
+              />
               <span className={`font-bold text-xl transition-colors duration-300 ${
                 isScrolled ? 'text-[#FF6B35]' : 'text-white'
               }`}>
@@ -110,9 +112,11 @@ export default function Navbar() {
           {/* Left Column - Logo */}
           <div className="flex justify-start">
             <a href="#hero" className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-[#FF6B35] rounded-full flex items-center justify-center">
-                <span className="text-white font-bold text-sm">C</span>
-              </div>
+              <img 
+                src="/cdtlogo2.png" 
+                alt="CDTT Logo" 
+                className="w-10 h-10 object-cover rounded-full border-2 border-white/20"
+              />
               <span className={`font-bold text-xl transition-colors duration-300 ${
                 isScrolled ? 'text-[#FF6B35]' : 'text-white'
               }`}>
