@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { MonitorCheck, BookOpen, ShieldCheck, Users, Car, Truck, Zap, Clock } from 'lucide-react';
+import { MonitorCheck, BookOpen, ShieldCheck, Users, Car, Truck, Zap, Clock, Bike } from 'lucide-react';
 
 if (typeof window !== 'undefined') {
   gsap.registerPlugin(ScrollTrigger);
@@ -57,6 +57,13 @@ export default function FeaturesSection() {
       desc: 'Dedicated assessment for two-wheeled vehicles covering balance, maneuvering, and traffic navigation skills.',
       image: '/cycle1.jpg',
       icon: Users
+    },
+    {
+      id: 'tricycle',
+      title: 'Tricycle License',
+      desc: 'Specialized testing for three-wheeled vehicles including stability control, passenger safety, and urban navigation skills.',
+      image: '/tricycle1.jpg',
+      icon: Bike
     },
     {
       id: 'commercial',

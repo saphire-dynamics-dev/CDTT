@@ -49,7 +49,9 @@ export default function CTABannerSection() {
 
         {/* CTA Button */}
         <a 
-          href="#apply" 
+          href="https://app.cdttest.com.ng" 
+          target="_blank"
+          rel="noopener noreferrer"
           className="inline-flex items-center gap-3 px-8 py-4 bg-[#FF6B35] text-white font-semibold rounded-xl text-lg hover:bg-[#FF8C42] transition-all duration-300 hover:shadow-lg hover:scale-105"
         >
           Start Registration

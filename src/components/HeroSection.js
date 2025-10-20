@@ -118,13 +118,13 @@ export default function HeroSection() {
             Get Started Today
             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
           </a>
-          <a 
+          {/* <a 
             href="#about" 
             className="group flex items-center gap-3 px-8 py-4 bg-white/10 backdrop-blur-sm border border-white/30 text-white font-semibold rounded-full text-lg transition-all duration-300 hover:bg-white/20"
           >
             <Play className="w-4 h-4" />
             Watch Demo
-          </a>
+          </a> */}
         </div>
       </div>
     </section>

@@ -48,7 +48,9 @@ export default function FooterSection() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <a 
-              href="#apply" 
+              href="https://app.cdttest.com.ng" 
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-3 px-10 py-4 bg-gradient-to-r from-[#FF6B35] to-[#FF8C42] text-white font-semibold rounded-2xl hover:shadow-2xl hover:shadow-[#FF6B35]/30 transition-all duration-300 hover:scale-105"
             >
               Book Your Test
@@ -57,7 +59,7 @@ export default function FooterSection() {
               </svg>
             </a>
             <a 
-              href="#about" 
+              href="#process" 
               className="inline-flex items-center gap-3 px-10 py-4 border-2 border-white/20 text-white font-semibold rounded-2xl hover:bg-white/10 transition-all duration-300"
             >
               Learn More
