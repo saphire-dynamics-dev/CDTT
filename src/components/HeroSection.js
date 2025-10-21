@@ -86,7 +86,7 @@ export default function HeroSection() {
 
         {/* Main headline */}
         <h1 className="headline text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight max-w-5xl mx-auto">
-          The Future of Driver Testing is Here
+          The Computerized Drivers Training and Testing Platform 
         </h1>
         
         <p className="subheadline text-lg md:text-xl lg:text-2xl text-white/90 mb-8 max-w-3xl mx-auto leading-relaxed">

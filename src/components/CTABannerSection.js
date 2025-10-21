@@ -49,12 +49,12 @@ export default function CTABannerSection() {
 
         {/* CTA Button */}
         <a 
-          href="https://app.cdttest.com.ng" 
+          href="https://app.cdttest.com.ng/sign-up" 
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center gap-3 px-8 py-4 bg-[#FF6B35] text-white font-semibold rounded-xl text-lg hover:bg-[#FF8C42] transition-all duration-300 hover:shadow-lg hover:scale-105"
         >
-          Start Registration
+          Begin Registration for your computerized drivers test
           <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
           </svg>

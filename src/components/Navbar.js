@@ -96,13 +96,36 @@ export default function Navbar() {
             {/* Get Started Button */}
             <a
               href="#apply"
-              className={`px-6 py-2 rounded-full font-semibold transition-all duration-300 hover:scale-105 ${
+              className={`relative px-6 py-2 rounded-full font-semibold transition-all duration-300 hover:scale-105 overflow-hidden group ${
                 isScrolled
                   ? 'bg-[#FF6B35] text-white hover:bg-[#FF8C42]'
                   : 'bg-white/20 backdrop-blur-sm text-white border border-white/30 hover:bg-white hover:text-[#FF6B35]'
               }`}
+              style={{
+                animation: isScrolled ? 'none' : 'borderGlow 2s ease-in-out infinite alternate'
+              }}
             >
-              Get Started
+              <span className="relative z-10">Get Started</span>
+              
+              {/* Animated border overlay for scrolled state */}
+              {isScrolled && (
+                <div className="absolute inset-0 rounded-full bg-gradient-to-r from-[#FF6B35] via-[#FF8C42] to-[#FF6B35] bg-size-200 animate-pulse opacity-90"
+                     style={{
+                       backgroundSize: '200% 100%',
+                       animation: 'flowingBorder 3s linear infinite'
+                     }}>
+                </div>
+              )}
+              
+              {/* Glowing border for non-scrolled state */}
+              {!isScrolled && (
+                <div className="absolute inset-0 rounded-full border-2 border-white/50 group-hover:border-white/80 transition-all duration-300"
+                     style={{
+                       boxShadow: '0 0 20px rgba(255, 255, 255, 0.3)',
+                       animation: 'borderPulse 2s ease-in-out infinite alternate'
+                     }}>
+                </div>
+              )}
             </a>
           </div>
         </div>
@@ -154,13 +177,48 @@ export default function Navbar() {
             <a
               href="#apply"
               onClick={() => setIsMobileMenuOpen(false)}
-              className="block w-full text-center py-3 mt-4 bg-[#FF6B35] text-white rounded-full font-semibold hover:bg-[#FF8C42] transition-colors duration-300"
+              className="relative block w-full text-center py-3 mt-4 bg-[#FF6B35] text-white rounded-full font-semibold hover:bg-[#FF8C42] transition-colors duration-300 overflow-hidden group"
             >
-              Get Started
+              <span className="relative z-10">Get Started</span>
+              <div className="absolute inset-0 bg-gradient-to-r from-[#FF6B35] via-[#FF8C42] to-[#FF6B35] opacity-0 group-hover:opacity-100 transition-all duration-500"
+                   style={{
+                     backgroundSize: '200% 100%',
+                     animation: 'flowingBorder 2s linear infinite'
+                   }}>
+              </div>
             </a>
           </div>
         )}
       </div>
+      
+      {/* Add custom keyframes for the border animations */}
+      <style jsx>{`
+        @keyframes flowingBorder {
+          0% { background-position: 0% 50%; }
+          50% { background-position: 100% 50%; }
+          100% { background-position: 0% 50%; }
+        }
+        
+        @keyframes borderPulse {
+          0% { 
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+            border-color: rgba(255, 255, 255, 0.5);
+          }
+          100% { 
+            box-shadow: 0 0 30px rgba(255, 255, 255, 0.6);
+            border-color: rgba(255, 255, 255, 0.8);
+          }
+        }
+        
+        @keyframes borderGlow {
+          0% { 
+            box-shadow: 0 0 15px rgba(255, 107, 53, 0.3);
+          }
+          100% { 
+            box-shadow: 0 0 25px rgba(255, 107, 53, 0.6);
+          }
+        }
+      `}</style>
     </nav>
   );
 }

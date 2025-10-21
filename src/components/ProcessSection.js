@@ -149,14 +149,31 @@ export default function ProcessSection() {
               Join thousands of Nigerians who have already experienced our seamless digital testing process.
             </p>
             <a 
-              href="https://app.cdttest.com.ng" 
+              href="https://app.cdttest.com.ng/sign-up" 
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-8 py-3 bg-gray-800 text-white font-semibold rounded-full hover:bg-[#FF6B35] transition-all duration-300 group"
+              className="inline-flex items-center gap-2 px-8 py-3 bg-gradient-to-r from-gray-800 via-[#FF6B35] to-gray-800 bg-size-200 bg-pos-0 hover:bg-pos-100 text-white font-semibold rounded-full transition-all duration-500 group animate-pulse hover:animate-none hover:shadow-lg hover:shadow-[#FF6B35]/30 hover:scale-105 relative overflow-hidden"
+              style={{
+                backgroundSize: '200% 100%',
+                backgroundPosition: '0% 50%',
+                animation: 'flowingGradient 3s ease-in-out infinite'
+              }}
             >
-              Begin Registration
-              <span className="group-hover:translate-x-1 transition-transform">→</span>
+              <span className="relative z-10">Begin Registration for your computerized drivers test</span>
+              <span className="relative z-10 group-hover:translate-x-1 transition-transform duration-300">→</span>
+              
+              {/* Flowing overlay effect */}
+              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700 ease-out"></div>
             </a>
+            
+            {/* Add custom keyframes for the flowing gradient */}
+            <style jsx>{`
+              @keyframes flowingGradient {
+                0% { background-position: 0% 50%; }
+                50% { background-position: 100% 50%; }
+                100% { background-position: 0% 50%; }
+              }
+            `}</style>
           </div>
         </div>
       </div>
