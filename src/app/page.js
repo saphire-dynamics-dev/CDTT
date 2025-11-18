@@ -15,7 +15,7 @@ export default function Home() {
       <Navbar />
       <HeroSection />
       <AboutSection />
-      <FeaturesSection />
+      {/* <FeaturesSection /> */}
       <ProcessSection />
       <TestimonialsSection />
       <CTABannerSection />

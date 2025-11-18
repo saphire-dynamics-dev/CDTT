@@ -31,8 +31,8 @@ export default function FeaturesSection() {
     },
     { 
       icon: Clock, 
-      title: "24/7 Availability", 
-      desc: "Take your test anytime, anywhere. Our digital platform operates around the clock across all centers." 
+      title: "Schedule Availability", 
+      desc: "Book your test at a time that suits you. Flexible scheduling options to fit your busy lifestyle." 
     }
   ];
 
@@ -65,13 +65,13 @@ export default function FeaturesSection() {
       image: '/tricycle1.jpg',
       icon: Bike
     },
-    {
-      id: 'commercial',
-      title: 'Commercial Vehicle License',
-      desc: 'Professional driver certification for buses, delivery vehicles, and specialized commercial transportation.',
-      image: '/jeep1.jpg',
-      icon: BookOpen
-    }
+    // {
+    //   id: 'commercial',
+    //   title: 'Commercial Vehicle License',
+    //   desc: 'Professional driver certification for buses, delivery vehicles, and specialized commercial transportation.',
+    //   image: '/jeep1.jpg',
+    //   icon: BookOpen
+    // }
   ];
 
   useEffect(() => {

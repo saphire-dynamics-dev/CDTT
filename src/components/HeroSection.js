@@ -46,12 +46,15 @@ export default function HeroSection() {
   }, []);
 
   return (
-    <section ref={heroRef} id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section ref={heroRef} id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden pb-5">
       {/* Background Image */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        // style={{
+        //   backgroundImage: `url('https://images.unsplash.com/photo-1449824913935-59a10b8d2000?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80')`
+        // }}
         style={{
-          backgroundImage: `url('https://images.unsplash.com/photo-1449824913935-59a10b8d2000?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80')`
+          backgroundImage: `url('/abg1.jpeg.jpg')`
         }}
       ></div>
       

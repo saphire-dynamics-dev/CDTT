@@ -4,35 +4,38 @@ import { useEffect, useRef, useState } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { Menu, X } from 'lucide-react';
+import Link from 'next/link';
 
 if (typeof window !== 'undefined') {
   gsap.registerPlugin(ScrollTrigger);
 }
 
-export default function Navbar() {
+export default function Navbar({ forceSticky = false }) {
   const navRef = useRef();
-  const [isScrolled, setIsScrolled] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(forceSticky);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const navItems = [
-    { name: 'Home', href: '#hero' },
-    { name: 'About', href: '#about' },
-    { name: 'Features', href: '#features' },
-    { name: 'Process', href: '#process' },
-    { name: 'Testimonials', href: '#testimonials' },
-    { name: 'Contact', href: '#footer' }
+    { name: 'Home', href: '/' },
+    { name: 'About', href: '/about' },
+    { name: 'Features', href: '/features' },
+    { name: 'Process', href: '/process' },
+    { name: 'Testimonials', href: '/testimonials' },
+    // { name: 'Contact', href: '/contact' }
   ];
 
   useEffect(() => {
+    if (forceSticky) {
+      setIsScrolled(true);
+      return;
+    }
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
     };
 
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
-  // Removed GSAP animation that was causing visibility issues
+  }, [forceSticky]);
 
   return (
     <nav 
@@ -65,7 +68,7 @@ export default function Navbar() {
           {/* Center Column - Navigation Items */}
           <div className="flex items-center justify-center space-x-8">
             {navItems.filter(item => item.name !== 'Contact').map((item, index) => (
-              <a
+              <Link
                 key={index}
                 href={item.href}
                 className={`font-medium transition-all duration-300 hover:scale-105 ${
@@ -75,15 +78,15 @@ export default function Navbar() {
                 }`}
               >
                 {item.name}
-              </a>
+              </Link>
             ))}
           </div>
 
           {/* Right Column - CTA Button */}
           <div className="flex items-center justify-end space-x-4">
             {/* Contact link */}
-            <a
-              href="#footer"
+            {/* <Link
+              href="/contact"
               className={`font-medium transition-all duration-300 hover:scale-105 ${
                 isScrolled 
                   ? 'text-gray-700 hover:text-[#FF6B35]' 
@@ -91,11 +94,11 @@ export default function Navbar() {
               }`}
             >
               Contact
-            </a>
+            </Link> */}
             
             {/* Get Started Button */}
-            <a
-              href="#apply"
+            <Link
+              href="/apply"
               className={`relative px-6 py-2 rounded-full font-semibold transition-all duration-300 hover:scale-105 overflow-hidden group ${
                 isScrolled
                   ? 'bg-[#FF6B35] text-white hover:bg-[#FF8C42]'
@@ -126,7 +129,7 @@ export default function Navbar() {
                      }}>
                 </div>
               )}
-            </a>
+            </Link>
           </div>
         </div>
 
@@ -165,17 +168,17 @@ export default function Navbar() {
         {isMobileMenuOpen && (
           <div className="md:hidden bg-white/95 backdrop-blur-md rounded-lg mt-2 p-4 shadow-lg">
             {navItems.map((item, index) => (
-              <a
+              <Link
                 key={index}
                 href={item.href}
                 onClick={() => setIsMobileMenuOpen(false)}
                 className="block py-3 text-gray-700 hover:text-[#FF6B35] transition-colors duration-300"
               >
                 {item.name}
-              </a>
+              </Link>
             ))}
-            <a
-              href="#apply"
+            <Link
+              href="/apply"
               onClick={() => setIsMobileMenuOpen(false)}
               className="relative block w-full text-center py-3 mt-4 bg-[#FF6B35] text-white rounded-full font-semibold hover:bg-[#FF8C42] transition-colors duration-300 overflow-hidden group"
             >
@@ -186,7 +189,7 @@ export default function Navbar() {
                      animation: 'flowingBorder 2s linear infinite'
                    }}>
               </div>
-            </a>
+            </Link>
           </div>
         )}
       </div>
