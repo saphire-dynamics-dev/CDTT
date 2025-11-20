@@ -54,7 +54,7 @@ export default function HeroSection() {
         //   backgroundImage: `url('https://images.unsplash.com/photo-1449824913935-59a10b8d2000?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80')`
         // }}
         style={{
-          backgroundImage: `url('/abg1.jpeg.jpg')`
+          backgroundImage: `url('/abg1.jpg')`
         }}
       ></div>
       
