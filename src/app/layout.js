@@ -16,11 +16,11 @@ export const metadata = {
   description: "The official Computerized drivers testing and training platform of Nigeria",
   icons: {
     icon: {
-      url: "/cdtlogo2.png",
+      url: "/favicon.png",
       type: "image/png",
     },
-    shortcut: "/cdtlogo2.png",
-    apple: "/cdtlogo2.png",
+    shortcut: "/favicon.png",
+    apple: "/favicon.png",
   },
   openGraph: {
     title: "Computerized drivers testing and training platform - CDTT",
@@ -39,10 +39,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <head>
+      {/* <head>
         <link rel="icon" href="/favicon.png" type="image/png" sizes="any" />
         <link rel="apple-touch-icon" href="/favicon.png" />
-      </head>
+      </head> */}
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
