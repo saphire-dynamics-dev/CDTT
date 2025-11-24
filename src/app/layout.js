@@ -22,14 +22,24 @@ export const metadata = {
   openGraph: {
     title: "Computerized drivers testing and training platform - CDTT",
     description: "The official Computerized drivers testing and training platform of Nigeria",
-    image: "/cdtlogo2.png",
+    image: {
+      url: "/cdtlogo2.png",
+      width: 1200,
+      height: 630,
+      alt: "CDTT Platform Logo",
+    },
     type: "website",
+    url: "https://cdttest.com.ng",
   },
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/cdtlogo2.png" type="image/png" sizes="any" />
+        <link rel="apple-touch-icon" href="/cdtlogo2.png" />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
