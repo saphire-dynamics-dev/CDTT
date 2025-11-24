@@ -14,6 +14,9 @@ const geistMono = Geist_Mono({
 export const metadata = {
   title: "Computerized drivers testing and training platform - CDTT",
   description: "The official Computerized drivers testing and training platform of Nigeria",
+  icons: {
+    icon: "/cdtlogo2.png",
+  },
 };
 
 export default function RootLayout({ children }) {

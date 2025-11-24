@@ -75,7 +75,7 @@ export default function AboutSection() {
           <div className="bg-white rounded-2xl shadow-xl p-8">
             <div className="aspect-video bg-gradient-to-r from-[#FF6B35] to-[#FF8C42] rounded-xl overflow-hidden">
               <img 
-                src="/abujapretty.jpg" 
+                src="/Abujapretty.jpg" 
                 alt="Computer-based testing station"
                 className="w-full h-full object-cover"
               />
