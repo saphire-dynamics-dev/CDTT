@@ -16,6 +16,14 @@ export const metadata = {
   description: "The official Computerized drivers testing and training platform of Nigeria",
   icons: {
     icon: "/cdtlogo2.png",
+    shortcut: "/cdtlogo2.png",
+    apple: "/cdtlogo2.png",
+  },
+  openGraph: {
+    title: "Computerized drivers testing and training platform - CDTT",
+    description: "The official Computerized drivers testing and training platform of Nigeria",
+    image: "/cdtlogo2.png",
+    type: "website",
   },
 };
 
