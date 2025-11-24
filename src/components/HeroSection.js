@@ -59,7 +59,7 @@ export default function HeroSection() {
       ></div>
       
       {/* Dark semitransparent blur overlay */}
-      <div className="absolute inset-0 bg-black/60 backdrop-blur-[2px]"></div>
+      <div className="absolute inset-0 bg-black/60 backdrop-blur-[0.5px]"></div>
       
       {/* Orange gradient overlay for brand consistency */}
       <div className="absolute inset-0 bg-gradient-to-br from-[#FF6B35]/20 via-[#FF8C42]/10 to-[#FF4500]/20"></div>
