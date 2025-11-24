@@ -18,37 +18,37 @@ export default function TestimonialsSection() {
     { 
       text: "The computerized test was seamless. No waiting, no stress - exactly what Nigeria needs.", 
       author: "Chinedu Okafor", 
-      position: "Software Engineer, Lagos",
+      position: "Software Engineer, Kaduna",
       rating: 5
     },
     { 
       text: "Finally, a fair way for everyone to take the driver's test. Transparency at its best.", 
       author: "Aisha Mohammed", 
-      position: "Business Owner, Abuja",
+      position: "Business Owner, Kaduna",
       rating: 5
     },
     { 
       text: "Nigeria is ready for this level of modernization. Proud to be part of this change.", 
       author: "Kunle Adebayo", 
-      position: "Teacher, Port Harcourt",
+      position: "Teacher, Kaduna",
       rating: 5
     },
     { 
       text: "I completed my test in 30 minutes with instant results. Revolutionary system!", 
       author: "Fatima Yusuf", 
-      position: "Student, Kano",
+      position: "Student, Kaduna",
       rating: 5
     },
     { 
       text: "No more corruption, no more delays. This is the future of driver testing.", 
       author: "Emeka Nwankwo", 
-      position: "Entrepreneur, Enugu",
+      position: "Entrepreneur, Kaduna",
       rating: 5
     },
     { 
       text: "The study materials were comprehensive and the test was fair. Highly recommend.", 
       author: "Grace Oduya", 
-      position: "Nurse, Warri",
+      position: "Nurse, Kaduna",
       rating: 5
     }
   ];
@@ -63,31 +63,31 @@ export default function TestimonialsSection() {
     { 
       text: "The digital certificate was ready immediately. Amazing efficiency!", 
       author: "Blessing Okoro", 
-      position: "Marketing Executive, Owerri",
+      position: "Marketing Executive, Kaduna",
       rating: 5
     },
     { 
-      text: "I took my test at 8 PM! 24/7 availability is a game-changer.", 
+      text: "I took my test at 8 PM! Flexible scheduling is a game-changer.", 
       author: "Ahmed Garba", 
-      position: "Taxi Driver, Sokoto",
+      position: "Taxi Driver, Kaduna",
       rating: 5
     },
     { 
       text: "Clean interface, clear instructions. Even my grandmother could use this.", 
       author: "Chioma Eze", 
-      position: "IT Specialist, Calabar",
+      position: "IT Specialist, Kaduna",
       rating: 5
     },
     { 
       text: "From registration to certificate in one day. Unbelievable improvement!", 
       author: "Yusuf Musa", 
-      position: "Mechanic, Jos",
+      position: "Mechanic, Kaduna",
       rating: 5
     },
     { 
       text: "Professional, efficient, and completely transparent. Nigeria is moving forward.", 
       author: "Adunni Taiwo", 
-      position: "Doctor, Ibadan",
+      position: "Doctor, Kaduna",
       rating: 5
     }
   ];
@@ -172,7 +172,7 @@ export default function TestimonialsSection() {
           <div className="inline-block bg-black rounded-full px-6 py-2 mb-6">
             <div className="flex items-center gap-2">
               <Star className="w-4 h-4 fill-yellow-400 text-yellow-400" />
-              <span className="text-white text-sm font-medium">Rated 4.9/5 by over 10,000 users</span>
+              <span className="text-white text-sm font-medium">Rated 4.9/5 by hundreds of users</span>
             </div>
           </div>
           <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6 leading-tight">

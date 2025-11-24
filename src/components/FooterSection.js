@@ -88,7 +88,7 @@ export default function FooterSection() {
                     <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
                   </svg>
                 </div>
-                <span className="text-gray-300">+234-800-TEST-NOW</span>
+                <span className="text-gray-300">+2349032763432</span>
               </div>
               <div className="flex items-center gap-4">
                 <div className="w-8 h-8 bg-[#FF6B35]/20 rounded-lg flex items-center justify-center">
@@ -105,7 +105,7 @@ export default function FooterSection() {
                     <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/>
                   </svg>
                 </div>
-                <span className="text-gray-300">info@cdtt.ng</span>
+                <span className="text-gray-300">info@cdttest.com.ng</span>
               </div>
             </div>
           </div>
@@ -189,7 +189,7 @@ export default function FooterSection() {
         <div className="border-t border-gray-700 pt-8 flex flex-col md:flex-row justify-between items-center">
           <div className="flex flex-col md:flex-row items-center gap-4 mb-4 md:mb-0">
             <p className="text-gray-400">
-              ©2025 <span className="text-[#FF6B35] font-semibold">CDTT.ng</span> - All rights reserved.
+              ©2025 <span className="text-[#FF6B35] font-semibold">CDTTEST.com.ng</span> - All rights reserved.
             </p>
             <div className="flex items-center gap-2 text-gray-500 text-sm">
               <span>Built with ❤️ in Nigeria</span>

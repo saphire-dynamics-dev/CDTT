@@ -97,7 +97,7 @@ export default function HeroSection() {
         </p>
 
         {/* Stats */}
-        <div className="hero-stats flex flex-wrap justify-center gap-8 mb-12 text-white/80">
+        {/* <div className="hero-stats flex flex-wrap justify-center gap-8 mb-12 text-white/80">
           <div className="text-center">
             <div className="text-2xl md:text-3xl font-bold text-white">10,000+</div>
             <div className="text-sm">Tests Completed</div>
@@ -110,7 +110,7 @@ export default function HeroSection() {
             <div className="text-2xl md:text-3xl font-bold text-white">36</div>
             <div className="text-sm">States Supported</div>
           </div>
-        </div>
+        </div> */}
         
         {/* CTA buttons */}
         <div className="cta-group flex flex-col sm:flex-row gap-4 justify-center items-center">

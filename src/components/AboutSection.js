@@ -43,8 +43,8 @@ export default function AboutSection() {
     <section ref={aboutRef} className="about-section relative py-24 px-6 overflow-hidden" id="about">
       {/* Background Shapes */}
       <div className="absolute top-0 left-0 w-96 h-96 bg-[#FF6B35]/5 rounded-full blur-3xl -translate-x-32 -translate-y-32"></div>
-      <div className="absolute bottom-0 right-0 w-80 h-80 bg-[#006400]/8 rounded-full blur-2xl translate-x-24 translate-y-24"></div>
-      <div className="absolute top-1/2 left-1/4 w-64 h-64 bg-[#FF8C42]/3 rounded-full blur-3xl"></div>
+      {/* <div className="absolute bottom-0 right-0 w-80 h-80 bg-[#006400]/8 rounded-full blur-2xl translate-x-24 translate-y-24"></div> */}
+      {/* <div className="absolute top-1/2 left-1/4 w-64 h-64 bg-[#FF8C42]/3 rounded-full blur-3xl"></div> */}
       
       <div className="relative z-10 max-w-7xl mx-auto">
         <h2 className="about-title text-4xl md:text-5xl font-bold text-[#FF6B35] text-center mb-8">
@@ -105,24 +105,33 @@ export default function AboutSection() {
             <blockquote className="text-gray-700 mb-4 italic">
               &quot;I took my test last month and couldn&apos;t believe how smooth the process was. No stress, no confusion, just fair assessment.&quot;
             </blockquote>
-            <cite className="text-sm text-[#FF6B35] font-medium">- Amina K., Lagos</cite>
+            <cite className="text-sm text-[#FF6B35] font-medium">- Amina K., Kaduna</cite>
           </div>
 
-          {/* Card 3 - Stats */}
+          {/* Card 3 - Core Values */}
           <div className="about-paragraph bg-[#006400]/5 rounded-xl p-6 border border-[#006400]/20">
-            <h4 className="text-lg font-semibold text-gray-800 mb-4">Success Metrics</h4>
+            <h4 className="text-lg font-semibold text-gray-800 mb-4">Our Core Values</h4>
             <div className="space-y-3">
-              <div className="flex justify-between items-center">
-                <span className="text-sm text-gray-600">Pass Rate</span>
-                <span className="font-bold text-[#006400]">98%</span>
+              <div className="flex items-start gap-3">
+                <span className="text-[#006400] font-bold">•</span>
+                <div>
+                  <p className="text-sm font-semibold text-gray-800">Integrity</p>
+                  <p className="text-xs text-gray-600">Honest and transparent testing</p>
+                </div>
               </div>
-              <div className="flex justify-between items-center">
-                <span className="text-sm text-gray-600">Average Test Time</span>
-                <span className="font-bold text-[#006400]">45 mins</span>
+              <div className="flex items-start gap-3">
+                <span className="text-[#006400] font-bold">•</span>
+                <div>
+                  <p className="text-sm font-semibold text-gray-800">Fairness</p>
+                  <p className="text-xs text-gray-600">Equal opportunity for all</p>
+                </div>
               </div>
-              <div className="flex justify-between items-center">
-                <span className="text-sm text-gray-600">Customer Satisfaction</span>
-                <span className="font-bold text-[#006400]">99.2%</span>
+              <div className="flex items-start gap-3">
+                <span className="text-[#006400] font-bold">•</span>
+                <div>
+                  <p className="text-sm font-semibold text-gray-800">Excellence</p>
+                  <p className="text-xs text-gray-600">Quality in everything we do</p>
+                </div>
               </div>
             </div>
           </div>
@@ -140,24 +149,24 @@ export default function AboutSection() {
             </div>
           </div>
 
-          {/* Card 5 - Nationwide Coverage */}
+          {/* Card 5 - Reliable Infrastructure */}
           <div className="about-paragraph bg-white rounded-xl shadow-sm p-6 border border-gray-100 md:col-span-2 lg:col-span-1">
-            <h4 className="text-lg font-semibold text-gray-800 mb-4">Nationwide Coverage</h4>
+            <h4 className="text-lg font-semibold text-gray-800 mb-4">Reliable Infrastructure</h4>
             <p className="text-gray-600 text-sm mb-4">
-              Consistent testing standards across all 36 states and FCT ensure equal opportunities for all Nigerians.
+              State-of-the-art testing centers equipped with modern technology to deliver consistent and reliable testing experiences.
             </p>
             <div className="grid grid-cols-3 gap-4 text-center">
               <div>
-                <div className="text-xl font-bold text-[#FF6B35]">36</div>
-                <div className="text-xs text-gray-500">States</div>
-              </div>
-              <div>
-                <div className="text-xl font-bold text-[#FF6B35]">200+</div>
+                <div className="text-xl font-bold text-[#FF6B35]">Multiple</div>
                 <div className="text-xs text-gray-500">Centers</div>
               </div>
               <div>
-                <div className="text-xl font-bold text-[#FF6B35]">24/7</div>
-                <div className="text-xs text-gray-500">Available</div>
+                <div className="text-xl font-bold text-[#FF6B35]">Multiple</div>
+                <div className="text-xs text-gray-500">Tests Monthly</div>
+              </div>
+              <div>
+                <div className="text-xl font-bold text-[#FF6B35]">99.9%</div>
+                <div className="text-xs text-gray-500">Uptime</div>
               </div>
             </div>
           </div>
@@ -169,7 +178,7 @@ export default function AboutSection() {
               AI-powered assessment tools and real-time monitoring ensure accurate evaluation of driving skills and knowledge.
             </p>
             <div className="space-y-2">
-              <div className="text-xs text-gray-700">✓ Biometric verification</div>
+              {/* <div className="text-xs text-gray-700">✓ Biometric verification</div> */}
               <div className="text-xs text-gray-700">✓ Real-time scoring</div>
               <div className="text-xs text-gray-700">✓ Digital certification</div>
               <div className="text-xs text-gray-700">✓ Anti-fraud protection</div>
