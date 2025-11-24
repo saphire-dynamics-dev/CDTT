@@ -80,7 +80,7 @@ export default function HeroSection() {
       </div> */}
 
       {/* Main content */}
-      <div className="relative z-10 text-center max-w-7xl mx-auto px-6 pt-16">
+      <div className="relative z-10 text-center max-w-7xl mx-auto px-6 pt-6 md:pt-16 lg:pt-19">
         {/* Badge */}
         <div className="hero-badge inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-6 py-3 mb-8">
           <div className="w-2 h-2 bg-[#006400] rounded-full animate-pulse"></div>
