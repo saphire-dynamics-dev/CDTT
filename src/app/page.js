@@ -3,6 +3,8 @@
 import Navbar from '../components/Navbar';
 import HeroSection from '../components/HeroSection';
 import AboutSection from '../components/AboutSection';
+import TrainingShowcase from '../components/TrainingShowcase';
+import TrainingManualSection from '../components/TrainingManualSection';
 import FeaturesSection from '../components/FeaturesSection';
 import ProcessSection from '../components/ProcessSection';
 import TestimonialsSection from '../components/TestimonialsSection';
@@ -15,6 +17,8 @@ export default function Home() {
       <Navbar />
       <HeroSection />
       <AboutSection />
+      {/* <TrainingShowcase /> */}
+      <TrainingManualSection />
       {/* <FeaturesSection /> */}
       <ProcessSection />
       <TestimonialsSection />
