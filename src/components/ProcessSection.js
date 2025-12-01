@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { ClipboardCheck, Computer, GraduationCap, FileText, ChevronDown, ChevronUp, Download, Eye, X, Mail, Lock } from 'lucide-react';
+import { ClipboardCheck, Computer, GraduationCap, FileText, ChevronDown, ChevronUp, CheckCircle, Download, Eye, X, Mail, Lock } from 'lucide-react';
 
 if (typeof window !== 'undefined') {
   gsap.registerPlugin(ScrollTrigger);
@@ -362,7 +362,7 @@ export default function ProcessSection() {
                         required
                       />
                     </div>
-                    <p className="text-xs text-gray-500 mt-2">We'll send your login credentials to this email</p>
+                    <p className="text-xs text-gray-500 mt-2">We&apos;ll send your login credentials to this email</p>
                   </div>
                   <button
                     type="submit"
@@ -380,7 +380,7 @@ export default function ProcessSection() {
                     <p className="text-sm text-gray-700"><strong>Amount:</strong> ₦5,000</p>
                   </div>
                   <p className="text-gray-600 text-sm mb-6">
-                    Click below to complete secure payment. You'll receive your login credentials immediately after payment confirmation.
+                    Click below to complete secure payment. You&apos;ll receive your login credentials immediately after payment confirmation.
                   </p>
                   <button
                     onClick={handlePaymentComplete}
@@ -405,7 +405,7 @@ export default function ProcessSection() {
                     <p className="text-gray-700 mt-2"><strong>Password:</strong> Check your email for details</p>
                   </div>
                   <p className="text-xs text-gray-500 mb-4">
-                    Use the "View Manual" button to log in and access your manual anytime.
+                    Use the &quot;View Manual&quot; button to log in and access your manual anytime.
                   </p>
                   <button
                     onClick={() => setShowEmailModal(false)}
@@ -476,7 +476,7 @@ export default function ProcessSection() {
               </button>
 
               <p className="text-xs text-gray-500 text-center mt-4">
-                Don't have credentials? <a href="#" onClick={handleDownloadManual} className="text-[#FF6B35] hover:underline">Download the manual</a>
+                Don&apos;t have credentials? <a href="#" onClick={handleDownloadManual} className="text-[#FF6B35] hover:underline">Download the manual</a>
               </p>
             </form>
           </div>
