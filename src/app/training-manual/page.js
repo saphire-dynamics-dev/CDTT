@@ -116,10 +116,10 @@ export default function TrainingManualPage() {
                 Bi-Annual Training for Staff Drivers
               </h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                At CDT, we understand that the safety and efficiency of your organization's fleet rely heavily on the skills of your drivers. That's why we offer comprehensive bi-annual training programs designed to enhance the driving capabilities of your staff and promote a culture of safety within your organization.
+                At CDT, we understand that the safety and efficiency of your organization&apos;s fleet rely heavily on the skills of your drivers. That&apos;s why we offer comprehensive bi-annual training programs designed to enhance the driving capabilities of your staff and promote a culture of safety within your organization.
               </p>
               <p className="text-lg text-gray-700 leading-relaxed">
-                With CDT's bi-annual training for staff drivers, you can rest assured that your team is equipped with the knowledge and skills necessary to drive safely and efficiently. Invest in the safety of your drivers and the success of your organization today!
+                With CDT&apos;s bi-annual training for staff drivers, you can rest assured that your team is equipped with the knowledge and skills necessary to drive safely and efficiently. Invest in the safety of your drivers and the success of your organization today!
               </p>
             </div>
 
@@ -146,7 +146,7 @@ export default function TrainingManualPage() {
                   <div>
                     <h3 className="text-lg font-bold text-gray-900 mb-2">Customized Content</h3>
                     <p className="text-gray-700 text-sm">
-                      Training programs tailored to your organization's specific needs and fleet requirements.
+                      Training programs tailored to your organization&apos;s specific needs and fleet requirements.
                     </p>
                   </div>
                 </div>

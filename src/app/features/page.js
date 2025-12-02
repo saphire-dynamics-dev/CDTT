@@ -37,10 +37,10 @@ export default function FeaturesPage() {
                 The Future of Driver Testing
               </h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                The Computerized Drivers Test (CDT) transforms driver testing with a streamlined, efficient method to evaluate candidates' readiness to drive safely. CDT offers a modern, standardized, and unbiased system for administering tests, ensuring fair evaluations for all applicants.
+                The Computerized Drivers Test (CDT) transforms driver testing with a streamlined, efficient method to evaluate candidates&apos; readiness to drive safely. CDT offers a modern, standardized, and unbiased system for administering tests, ensuring fair evaluations for all applicants.
               </p>
               <p className="text-lg text-gray-700 leading-relaxed">
-                Manual testing is outdated, often subject to inconsistencies and subjective judgments. CDT's computerized process enhances accuracy, efficiency, and transparency, ensuring every aspiring driver knows traffic laws, road safety protocols, and practical driving skills before obtaining their driver's license.
+                Manual testing is outdated, often subject to inconsistencies and subjective judgments. CDT&apos;s computerized process enhances accuracy, efficiency, and transparency, ensuring every aspiring driver knows traffic laws, road safety protocols, and practical driving skills before obtaining their driver&apos;s license.
               </p>
             </div>
           </div>

@@ -47,7 +47,7 @@ export default function AboutPage() {
                 </p>
                 
                 <p className="text-lg">
-                  On this page, we'll guide you through everything you need to know to make this new process a breeze, starting from what computerized Driver's Training is all about to all the materials you need and Test-centers available to help ease your license acquisition today.
+                  On this page, we&apos;ll guide you through everything you need to know to make this new process a breeze, starting from what computerized Driver&apos;s Training is all about to all the materials you need and Test-centers available to help ease your license acquisition today.
                 </p>
               </div>
             </div>
@@ -66,7 +66,7 @@ export default function AboutPage() {
                   Founded in 2020, Computerized Drivers Training and Test Ltd (CDT) is dedicated to enhancing road safety and reducing accident risks through innovative driver training programs. Based in Nigeria, we leverage advanced technology and interactive learning methods to equip drivers with essential skills for safe driving.
                 </p>
                 <p className="text-lg text-gray-700 leading-relaxed">
-                  With our cutting-edge programs and technology-driven training, drivers gain the skills and knowledge to confidently handle modern road challenges. Whether you're new to driving or looking to enhance your abilities, our Trainings and manuals ensure you're fully prepared for the road ahead.
+                  With our cutting-edge programs and technology-driven training, drivers gain the skills and knowledge to confidently handle modern road challenges. Whether you&apos;re new to driving or looking to enhance your abilities, our Trainings and manuals ensure you&apos;re fully prepared for the road ahead.
                 </p>
               </div>
               
@@ -222,7 +222,7 @@ export default function AboutPage() {
                   Purchase Manual & Prepare
                 </h3>
                 <p className="text-gray-600 text-center mb-6">
-                  CDT manual features comprehensive questions to ensure thorough test preparation so you'll gain the confidence to secure your license.
+                  CDT manual features comprehensive questions to ensure thorough test preparation so you&apos;ll gain the confidence to secure your license.
                 </p>
                 <button 
                   className="block w-full text-center py-3 bg-gray-200 text-gray-500 font-semibold rounded-lg cursor-not-allowed"
