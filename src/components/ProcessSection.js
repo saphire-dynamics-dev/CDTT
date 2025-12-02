@@ -96,30 +96,30 @@ export default function ProcessSection() {
   const testSteps = [
     { 
       icon: ClipboardCheck, 
-      title: "Register", 
-      shortDesc: "Sign up online and create your account on our digital platform.",
-      fullDesc: "Visit our official website at app.cdttest.com.ng to create your account. Complete your personal information including full name, date of birth, contact details, and upload a clear passport photograph. Verify your email address and phone number to activate your account. No physical documents or biometric verification required - everything is done digitally for your convenience.",
+      title: "Complete Registration", 
+      shortDesc: "Provide all required personal information to create your account.",
+      fullDesc: "Visit our official website at app.cdttest.com.ng and begin your registration by providing all required personal information including full name, date of birth, contact details, address, and upload a clear passport photograph. Verify your email address and phone number to proceed. All information must be accurate as it will appear on your certificate.",
       number: "01"
     },
     { 
       icon: FileText, 
-      title: "Select Test Category", 
-      shortDesc: "Choose your specific test category based on your vehicle type and intended use.",
-      fullDesc: "Register for your test of choice from our comprehensive categories: Truck Use (for commercial heavy-duty vehicles and cargo transportation), Vehicle Use (for standard passenger cars and light commercial vehicles), Motorcycle Use (for two-wheeled vehicles and tricycles), and Personal Use (for private individual transportation needs). Each category has specific requirements and testing protocols tailored to the vehicle type and usage pattern.",
+      title: "Select Test Details", 
+      shortDesc: "Choose your test type, state, center, and preferred schedule time.",
+      fullDesc: "Select your specific test category (Truck Use, Vehicle Use, Motorcycle Use, or Personal Use) based on your needs. Choose your preferred state and testing center location from our network of authorized centers across Nigeria. Pick a convenient date and time slot that fits your schedule. All selections can be reviewed before proceeding to payment.",
       number: "02"
     },
     { 
       icon: Computer, 
-      title: "Take Digital Test", 
-      shortDesc: "Complete your computer-based examination in a controlled environment.",
-      fullDesc: "Schedule your test appointment at any of our authorized digital testing centers across Nigeria. Take your comprehensive computer-based examination which includes theory questions, traffic rules assessment, road signs recognition, and hazard perception tests. Our advanced anti-fraud system ensures test integrity with real-time monitoring. The digital platform provides instant scoring with detailed performance analytics for each section of your test.",
+      title: "Make Payment & Get Code", 
+      shortDesc: "Complete payment and receive your unique test unlock code.",
+      fullDesc: "After completing registration, you'll be directed to a secure payment page. Complete your payment through our trusted payment gateway. Upon successful payment confirmation, a unique code needed to unlock your test will be sent immediately to both your registered phone number and email address. Keep this code safe as you'll need it to access your test.",
       number: "03"
     },
     { 
       icon: GraduationCap, 
-      title: "Get Certified", 
-      shortDesc: "Receive your digital certificate immediately upon successful completion.",
-      fullDesc: "Upon passing your test, receive your official digital driving certificate instantly through our platform. Your certificate is automatically verified and registered with relevant Nigerian transportation authorities. Download your certificate in PDF format, access it anytime through your account dashboard, and receive SMS/email confirmation. The digital certificate carries the same legal validity as traditional licenses and is recognized nationwide by law enforcement and regulatory bodies.",
+      title: "Take Test & Get Certified", 
+      shortDesc: "Complete your test and receive instant certification upon passing.",
+      fullDesc: "Arrive at your selected testing center on your scheduled date and time with your unlock code. Take your comprehensive computer-based examination at the center. If you reach the pass mark, your certificate will be sent automatically to your registered email immediately after completing the test. You can also download your certificate directly from your account dashboard anytime.",
       number: "04"
     }
   ];
