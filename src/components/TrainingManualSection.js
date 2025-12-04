@@ -195,21 +195,37 @@ export default function TrainingManualSection() {
         </div>
 
         {/* CTA Section */}
-        <div className="bg-[#FF6B35]/10  rounded-2xl p-8 md:p-12 text-center border border-[#FF6B35]/20">
+        <div className="bg-gradient-to-r from-[#FF6B35]/10 to-[#006400]/10 rounded-2xl p-8 md:p-12 text-center border border-[#FF6B35]/20">
           <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
             Get Your Training Manual Today
           </h3>
           <p className="text-gray-600 mb-8 max-w-2xl mx-auto">
             Access the complete training manual with offline download capability. Start your preparation journey with our expertly curated content.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-[#FF6B35] hover:bg-[#E55A24] text-white font-semibold py-3 px-8 rounded-xl transition-all duration-300 hover:shadow-lg hover:scale-105 flex items-center justify-center gap-2">
-              <Download className="w-5 h-5" />
-              Access Manual (Coming Soon)
-            </button>
-            {/* <button className="bg-white hover:bg-gray-50 text-[#FF6B35] font-semibold py-3 px-8 rounded-xl transition-all duration-300 border-2 border-[#FF6B35] hover:shadow-lg">
-              Preview Chapters
-            </button> */}
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <div className="flex flex-col items-center">
+              <button 
+                disabled
+                className="bg-gray-200 text-gray-500 font-semibold py-3 px-8 rounded-xl cursor-not-allowed flex items-center justify-center gap-2"
+              >
+                <Download className="w-5 h-5" />
+                Download Manual (PDF)
+              </button>
+              <span className="mt-2 text-xs bg-gray-100 text-gray-600 font-semibold px-3 py-1 rounded-full">
+                Coming Soon
+              </span>
+            </div>
+            <div className="flex flex-col items-center">
+              <button 
+                disabled
+                className="bg-gray-200 text-gray-500 font-semibold py-3 px-8 rounded-xl cursor-not-allowed border-2 border-gray-300"
+              >
+                Preview Chapters
+              </button>
+              <span className="mt-2 text-xs bg-gray-100 text-gray-600 font-semibold px-3 py-1 rounded-full">
+                Coming Soon
+              </span>
+            </div>
           </div>
         </div>
       </div>

@@ -49,7 +49,7 @@ export default function AboutSection() {
           Transforming Driver Education in Nigeria
         </h2>
         <p className="about-paragraph text-xl text-gray-600 text-center mb-16 max-w-3xl mx-auto">
-          Computerized Drivers Test is a modern approach apoved by the Federal Government of Nigeria to the aquisition of drivers licence. This employs the use of Computer Based Testing to acces the knowledge and understanding of drivers regarding road use and safe driving practices. Candidates are to take thier tests at designated centers after studying the Computer Drivers Test Manual
+          Computerized Drivers Test is a modern approach approved by the Federal Government of Nigeria to the aquisition of drivers licence. This employs the use of Computer Based Testing to acces the knowledge and understanding of drivers regarding road use and safe driving practices. Candidates are to take thier tests at designated centers after studying the Computer Drivers Test Manual
         </p>
 
         {/* Testing Section */}

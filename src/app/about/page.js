@@ -200,12 +200,17 @@ export default function AboutPage() {
                 <p className="text-gray-600 text-center mb-6">
                   Begin your journey to becoming a licensed driver by familiarizing yourself with the latest steps, requirements and regulations.
                 </p>
-                <Link 
-                  href="/training-manual"
-                  className="block w-full text-center py-3 bg-[#FF6B35] hover:bg-[#E55A24] text-white font-semibold rounded-lg transition-colors duration-300"
+                <button
+                  disabled
+                  className="block w-full text-center py-3 bg-gray-200 text-gray-500 font-semibold rounded-lg cursor-not-allowed"
                 >
                   Get Manual
-                </Link>
+                </button>
+                <div className="mt-3 text-center">
+                  <span className="inline-block bg-gray-100 text-gray-600 text-xs font-semibold px-3 py-1 rounded-full">
+                    Coming Soon
+                  </span>
+                </div>
               </div>
 
               {/* Step 2 */}

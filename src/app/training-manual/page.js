@@ -184,6 +184,293 @@ export default function TrainingManualPage() {
         </div>
       </section>
 
+      {/* Manual Topics Section */}
+      <section className="py-24 px-6 bg-gray-50">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">
+              What&apos;s Covered in the Training Manual
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Comprehensive coverage of all essential topics to prepare you for safe, confident driving
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {/* Traffic Laws and Regulations */}
+            <div className="bg-white rounded-2xl p-8 shadow-sm border border-gray-100 hover:shadow-lg transition-all duration-300">
+              <div className="flex items-center justify-center w-16 h-16 bg-gradient-to-br from-[#FF6B35]/20 to-[#FF8C42]/10 rounded-2xl mb-6 mx-auto">
+                <span className="text-3xl">⚖️</span>
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-3 text-center">Traffic Laws and Regulations</h3>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                Understanding national and local traffic laws is essential. This section covers speed limits, road signs, pedestrian rights, and important regulations like seatbelt laws, driving under the influence (DUI) consequences, and traffic signal operations.
+              </p>
+            </div>
+
+            {/* Road Signs and Markings */}
+            <div className="bg-white rounded-2xl p-8 shadow-sm border border-gray-100 hover:shadow-lg transition-all duration-300">
+              <div className="flex items-center justify-center w-16 h-16 bg-gradient-to-br from-[#FF6B35]/20 to-[#FF8C42]/10 rounded-2xl mb-6 mx-auto">
+                <span className="text-3xl">🚦</span>
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-3 text-center">Road Signs and Markings</h3>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                A detailed explanation of all road signs, including warning signs, regulatory signs, and informational signs. Candidates must recognize and understand their meanings, especially in tricky driving environments.
+              </p>
+            </div>
+
+            {/* Driving Etiquette */}
+            <div className="bg-white rounded-2xl p-8 shadow-sm border border-gray-100 hover:shadow-lg transition-all duration-300">
+              <div className="flex items-center justify-center w-16 h-16 bg-gradient-to-br from-[#FF6B35]/20 to-[#FF8C42]/10 rounded-2xl mb-6 mx-auto">
+                <span className="text-3xl">🤝</span>
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-3 text-center">Driving Etiquette</h3>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                Drivers must understand how to navigate safely and courteously. This section explains yielding, lane-changing, merging, and the importance of maintaining safe distances.
+              </p>
+            </div>
+
+            {/* Defensive Driving Techniques */}
+            <div className="bg-white rounded-2xl p-8 shadow-sm border border-gray-100 hover:shadow-lg transition-all duration-300">
+              <div className="flex items-center justify-center w-16 h-16 bg-gradient-to-br from-[#FF6B35]/20 to-[#FF8C42]/10 rounded-2xl mb-6 mx-auto">
+                <span className="text-3xl">🛡️</span>
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-3 text-center">Defensive Driving Techniques</h3>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                Defensive driving techniques are crucial to passing the test and staying safe on the road. These include maintaining awareness of your surroundings, anticipating potential hazards, and adjusting speed accordingly.
+              </p>
+            </div>
+
+            {/* Vehicle Safety Checks */}
+            <div className="bg-white rounded-2xl p-8 shadow-sm border border-gray-100 hover:shadow-lg transition-all duration-300">
+              <div className="flex items-center justify-center w-16 h-16 bg-gradient-to-br from-[#FF6B35]/20 to-[#FF8C42]/10 rounded-2xl mb-6 mx-auto">
+                <span className="text-3xl">🔧</span>
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-3 text-center">Vehicle Safety Checks</h3>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                Before starting a journey, drivers should be aware of the essential safety checks that ensure their vehicle is roadworthy. This section will cover topics like checking tire pressure, fluid levels, and mirrors.
+              </p>
+            </div>
+
+            {/* Road Scenarios */}
+            <div className="bg-white rounded-2xl p-8 shadow-sm border border-gray-100 hover:shadow-lg transition-all duration-300">
+              <div className="flex items-center justify-center w-16 h-16 bg-gradient-to-br from-[#FF6B35]/20 to-[#FF8C42]/10 rounded-2xl mb-6 mx-auto">
+                <span className="text-3xl">🛣️</span>
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-3 text-center">Road Scenarios</h3>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                Real-life driving scenarios are simulated in the test to evaluate a candidate&apos;s response to various conditions. This part of the manual includes examples of merging onto highways, navigating intersections, and handling roundabouts.
+              </p>
+            </div>
+          </div>
+
+          {/* CTA Banner */}
+          <div className="mt-16 bg-gradient-to-r from-[#FF6B35]/10 to-[#FF8C42]/10 rounded-2xl p-8 md:p-12 text-center border border-[#FF6B35]/20">
+            <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
+              Master All Topics with Our Comprehensive Manual
+            </h3>
+            <p className="text-gray-700 mb-8 max-w-2xl mx-auto">
+              Get detailed explanations, practice questions, and visual aids for every topic. Prepare thoroughly and pass your test with confidence.
+            </p>
+            <button 
+              disabled
+              className="inline-flex items-center gap-2 px-8 py-4 bg-gray-200 text-gray-500 font-semibold rounded-full cursor-not-allowed"
+            >
+              <BookOpen className="w-5 h-5" />
+              Get Your Manual Today
+            </button>
+            <div className="mt-3">
+              <span className="inline-block bg-gray-100 text-gray-600 text-xs font-semibold px-3 py-1 rounded-full">
+                Coming Soon
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Manual Pricing Section */}
+      <section className="py-24 px-6 bg-white">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">
+              Choose Your Training Manual
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Select the package that best fits your preparation needs
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            {/* Standard Manual Card */}
+            <div className="bg-gray-50 rounded-2xl p-8 border-2 border-gray-200 hover:border-[#FF6B35] transition-all duration-300 hover:shadow-xl relative">
+              <div className="mb-6">
+                <h3 className="text-2xl font-bold text-gray-900 mb-2">
+                  Standard Driving Manual
+                </h3>
+                <p className="text-gray-600 text-sm">
+                  With full instructions to help you pass your test
+                </p>
+              </div>
+
+              <div className="mb-6">
+                <div className="flex items-baseline gap-2">
+                  <span className="text-4xl font-bold text-[#FF6B35]">₦5,000</span>
+                  <span className="text-gray-500">Only</span>
+                </div>
+              </div>
+
+              <div className="mb-8">
+                <p className="text-gray-700 leading-relaxed">
+                  Meticulously crafted to prepare you for every aspect of the computerized driver&apos;s computer-based test <span className="font-semibold text-gray-900">(practice questions not included)</span>.
+                </p>
+              </div>
+
+              <div className="space-y-3 mb-8">
+                <div className="flex items-start gap-3">
+                  <div className="w-5 h-5 rounded-full bg-[#FF6B35]/10 flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <span className="text-[#FF6B35] text-xs">✓</span>
+                  </div>
+                  <p className="text-sm text-gray-700">Complete traffic laws and regulations</p>
+                </div>
+                <div className="flex items-start gap-3">
+                  <div className="w-5 h-5 rounded-full bg-[#FF6B35]/10 flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <span className="text-[#FF6B35] text-xs">✓</span>
+                  </div>
+                  <p className="text-sm text-gray-700">Detailed road signs and markings guide</p>
+                </div>
+                <div className="flex items-start gap-3">
+                  <div className="w-5 h-5 rounded-full bg-[#FF6B35]/10 flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <span className="text-[#FF6B35] text-xs">✓</span>
+                  </div>
+                  <p className="text-sm text-gray-700">Defensive driving techniques</p>
+                </div>
+                <div className="flex items-start gap-3">
+                  <div className="w-5 h-5 rounded-full bg-[#FF6B35]/10 flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <span className="text-[#FF6B35] text-xs">✓</span>
+                  </div>
+                  <p className="text-sm text-gray-700">Vehicle safety checks</p>
+                </div>
+                <div className="flex items-start gap-3">
+                  <div className="w-5 h-5 rounded-full bg-[#FF6B35]/10 flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <span className="text-[#FF6B35] text-xs">✓</span>
+                  </div>
+                  <p className="text-sm text-gray-700">Real-life road scenarios</p>
+                </div>
+              </div>
+
+              <button 
+                disabled
+                className="w-full py-3 bg-gray-200 text-gray-500 font-semibold rounded-lg cursor-not-allowed"
+              >
+                Get Standard Manual
+              </button>
+              
+              {/* Coming Soon Badge */}
+              <div className="mt-3 text-center">
+                <span className="inline-block bg-gray-100 text-gray-600 text-xs font-semibold px-3 py-1 rounded-full">
+                  Coming Soon
+                </span>
+              </div>
+            </div>
+
+            {/* Premium Manual Card */}
+            <div className="bg-gradient-to-br from-[#FF6B35]/5 to-[#FF8C42]/5 rounded-2xl p-8 border-2 border-[#FF6B35] hover:shadow-2xl transition-all duration-300 relative">
+              {/* Popular Badge */}
+              <div className="absolute -top-4 left-1/2 -translate-x-1/2">
+                <span className="bg-[#FF6B35] text-white text-xs font-bold px-4 py-1 rounded-full shadow-lg">
+                  MOST POPULAR
+                </span>
+              </div>
+
+              <div className="mb-6">
+                <h3 className="text-2xl font-bold text-gray-900 mb-2">
+                  Driving Manual with Questions
+                </h3>
+                <p className="text-gray-600 text-sm">
+                  Driving Manual + Questions
+                </p>
+                <p className="text-gray-600 text-sm">
+                  With full instructions to help you pass your test
+                </p>
+              </div>
+
+              <div className="mb-6">
+                <div className="flex items-baseline gap-2">
+                  <span className="text-4xl font-bold text-[#FF6B35]">₦7,000</span>
+                  <span className="text-gray-500">Only</span>
+                </div>
+              </div>
+
+              <div className="mb-8">
+                <p className="text-gray-700 leading-relaxed">
+                  Meticulously crafted to prepare you for every aspect of the computerized driver&apos;s computer-based test <span className="font-semibold text-[#FF6B35]">(with practice questions included)</span>.
+                </p>
+              </div>
+
+              <div className="space-y-3 mb-8">
+                <div className="flex items-start gap-3">
+                  <div className="w-5 h-5 rounded-full bg-[#FF6B35] flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <span className="text-white text-xs">✓</span>
+                  </div>
+                  <p className="text-sm text-gray-700 font-medium">Everything in Standard Manual</p>
+                </div>
+                <div className="flex items-start gap-3">
+                  <div className="w-5 h-5 rounded-full bg-[#FF6B35] flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <span className="text-white text-xs">✓</span>
+                  </div>
+                  <p className="text-sm text-gray-700 font-medium">1000+ practice questions</p>
+                </div>
+                <div className="flex items-start gap-3">
+                  <div className="w-5 h-5 rounded-full bg-[#FF6B35] flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <span className="text-white text-xs">✓</span>
+                  </div>
+                  <p className="text-sm text-gray-700 font-medium">Detailed answer explanations</p>
+                </div>
+                <div className="flex items-start gap-3">
+                  <div className="w-5 h-5 rounded-full bg-[#FF6B35] flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <span className="text-white text-xs">✓</span>
+                  </div>
+                  <p className="text-sm text-gray-700 font-medium">Mock test simulations</p>
+                </div>
+                <div className="flex items-start gap-3">
+                  <div className="w-5 h-5 rounded-full bg-[#FF6B35] flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <span className="text-white text-xs">✓</span>
+                  </div>
+                  <p className="text-sm text-gray-700 font-medium">Topic-wise practice tests</p>
+                </div>
+                <div className="flex items-start gap-3">
+                  <div className="w-5 h-5 rounded-full bg-[#FF6B35] flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <span className="text-white text-xs">✓</span>
+                  </div>
+                  <p className="text-sm text-gray-700 font-medium">Performance tracking</p>
+                </div>
+              </div>
+
+              <button 
+                disabled
+                className="w-full py-3 bg-gray-200 text-gray-500 font-semibold rounded-lg cursor-not-allowed"
+              >
+                Get Premium Manual
+              </button>
+              
+              {/* Coming Soon Badge */}
+              <div className="mt-3 text-center">
+                <span className="inline-block bg-[#FF6B35] text-white text-xs font-semibold px-3 py-1 rounded-full">
+                  Coming Soon
+                </span>
+              </div>
+            </div>
+          </div>
+
+          {/* Additional Info */}
+          <div className="mt-12 text-center">
+            <p className="text-gray-600 text-sm max-w-2xl mx-auto">
+              Both manuals are available in digital format with instant access after purchase. Lifetime updates included at no extra cost.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Training Showcase Section */}
       <TrainingShowcase />
 
