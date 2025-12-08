@@ -76,12 +76,20 @@ export default function AboutSection() {
               </div>
             </div>
             <div className="bg-white rounded-2xl shadow-xl p-8">
-              <div className="aspect-video bg-gradient-to-r from-[#FF6B35] to-[#FF8C42] rounded-xl overflow-hidden">
+              <div className="aspect-video bg-gradient-to-r from-[#FF6B35] to-[#FF8C42] rounded-xl overflow-hidden relative">
                 <img 
                   src="/Abujapretty.jpg" 
                   alt="Computer-based testing station"
                   className="w-full h-full object-cover"
                 />
+                {/* Logo Overlay */}
+                <div className="absolute top-4 right-4 w-20 h-20 bg-white rounded-full overflow-hidden border-2 border-white shadow-lg">
+                  <img 
+                    src="/cdtlogo2.png" 
+                    alt="CDTT Logo"
+                    className="w-full h-full object-contain scale-200"
+                  />
+                </div>
               </div>
             </div>
           </div>
@@ -130,12 +138,20 @@ export default function AboutSection() {
 
           <div className="grid lg:grid-cols-2 gap-12 items-center mb-12">
             <div className="bg-white rounded-2xl shadow-xl p-8">
-              <div className="aspect-video bg-gradient-to-r from-[#FF6B35] to-[#FF8C42] rounded-xl overflow-hidden flex items-center justify-center">
+              <div className="aspect-video bg-gradient-to-r from-[#FF6B35] to-[#FF8C42] rounded-xl overflow-hidden flex items-center justify-center relative">
                 <img 
                   src="/training2.webp" 
                   alt="Comprehensive driver training program"
                   className="w-full h-full object-cover"
                 />
+                {/* Logo Overlay */}
+                <div className="absolute top-4 right-4 w-20 h-20 bg-white rounded-full overflow-hidden border-2 border-white shadow-lg">
+                  <img 
+                    src="/cdtlogo2.png" 
+                    alt="CDTT Logo"
+                    className="w-full h-full object-contain scale-200"
+                  />
+                </div>
               </div>
             </div>
             <div className="space-y-6">

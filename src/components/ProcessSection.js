@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { ClipboardCheck, Computer, GraduationCap, FileText, ChevronDown, ChevronUp, CheckCircle, Download, Eye, X, Mail, Lock } from 'lucide-react';
+import MockTestSection from './MockTestSection';
 
 if (typeof window !== 'undefined') {
   gsap.registerPlugin(ScrollTrigger);
@@ -65,9 +66,9 @@ export default function ProcessSection() {
   const manualSteps = [
     {
       icon: Download,
-      title: "Download Manual",
-      shortDesc: "Click the download button to start getting your manual.",
-      fullDesc: "Click the 'Download Manual' button below to initiate the process. You'll be guided through entering your email address and making a secure payment to access the complete training manual.",
+      title: "Access Manual",
+      shortDesc: "Click the Access button to start getting your manual.",
+      fullDesc: "Click the 'Access Manual' button below to initiate the process. You'll be guided through entering your email address and making a secure payment to access the complete training manual.",
       number: "01"
     },
     {
@@ -331,6 +332,9 @@ export default function ProcessSection() {
           </div>
         </div>
       </div>
+
+      {/* Mock Test Section */}
+      <MockTestSection />
 
       {/* Email Modal for Download */}
       {showEmailModal && (

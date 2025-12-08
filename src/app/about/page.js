@@ -6,6 +6,7 @@ import FooterSection from '../../components/FooterSection';
 import AboutSection from '../../components/AboutSection';
 import { BookOpen, Users, Award, Shield, Target, CheckCircle, ShoppingCart, FileText, Monitor } from 'lucide-react';
 import Link from 'next/link';
+import MockTestSection from '../../components/MockTestSection';
 
 export default function AboutPage() {
   useEffect(() => {
@@ -19,7 +20,7 @@ export default function AboutPage() {
         {/* Hero Section */}
         <section className="relative py-32 px-6 bg-gradient-to-b from-[#FF6B35]/5 to-white overflow-hidden pt-24">
           <div className="absolute top-0 right-0 w-96 h-96 bg-[#FF6B35]/5 rounded-full blur-3xl -translate-y-32 translate-x-32"></div>
-          
+
           <div className="relative z-10 max-w-7xl mx-auto text-center">
             <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
               About CDTT
@@ -40,12 +41,12 @@ export default function AboutPage() {
                   Mandatory Computer-Based Driving Test Explained
                 </h2>
               </div>
-              
+
               <div className="space-y-6 text-gray-700 leading-relaxed">
                 <p className="text-lg">
                   In response to growing concerns over road safety and driving standards, the Federal Government of Nigeria has introduced a new law requiring all drivers to take a Computer-Based Theoretical Driving Test. This measure aims to create a modern approach which ensures that all drivers are well-versed in modern traffic laws, safe driving practices, and defensive driving techniques before getting behind the wheel.
                 </p>
-                
+
                 <p className="text-lg">
                   On this page, we&apos;ll guide you through everything you need to know to make this new process a breeze, starting from what computerized Driver&apos;s Training is all about to all the materials you need and Test-centers available to help ease your license acquisition today.
                 </p>
@@ -69,14 +70,22 @@ export default function AboutPage() {
                   With our cutting-edge programs and technology-driven training, drivers gain the skills and knowledge to confidently handle modern road challenges. Whether you&apos;re new to driving or looking to enhance your abilities, our Trainings and manuals ensure you&apos;re fully prepared for the road ahead.
                 </p>
               </div>
-              
+
               <div className="bg-white rounded-2xl shadow-xl p-8">
-                <div className="aspect-video bg-gradient-to-r from-[#FF6B35] to-[#FF8C42] rounded-xl overflow-hidden">
-                  <img 
-                    src="/Abujapretty.jpg" 
+                <div className="aspect-video bg-gradient-to-r from-[#FF6B35] to-[#FF8C42] rounded-xl overflow-hidden relative">
+                  <img
+                    src="/Abujapretty.jpg"
                     alt="CDT Training Center"
                     className="w-full h-full object-cover"
                   />
+                  {/* Logo Overlay */}
+                  <div className="absolute top-4 right-4 w-20 h-20 bg-white rounded-full overflow-hidden border-2 border-white shadow-lg">
+                    <img 
+                      src="/cdtlogo2.png" 
+                      alt="CDTT Logo"
+                      className="w-full h-full object-contain scale-200"
+                    />
+                  </div>
                 </div>
               </div>
             </div>
@@ -229,7 +238,7 @@ export default function AboutPage() {
                 <p className="text-gray-600 text-center mb-6">
                   CDT manual features comprehensive questions to ensure thorough test preparation so you&apos;ll gain the confidence to secure your license.
                 </p>
-                <button 
+                <button
                   className="block w-full text-center py-3 bg-gray-200 text-gray-500 font-semibold rounded-lg cursor-not-allowed"
                   disabled
                 >
@@ -253,7 +262,7 @@ export default function AboutPage() {
                 <p className="text-gray-600 text-center mb-6">
                   Go to the site to take your Online Driving Test and get certified immediately upon passing.
                 </p>
-                <a 
+                <a
                   href="https://app.cdttest.com.ng/sign-up"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -267,6 +276,8 @@ export default function AboutPage() {
         </section>
 
         <AboutSection />
+
+        <MockTestSection />
       </main>
       <FooterSection />
     </>

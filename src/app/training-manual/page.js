@@ -5,6 +5,7 @@ import Navbar from '@/components/Navbar';
 import TrainingShowcase from '@/components/TrainingShowcase';
 import TrainingManualSection from '@/components/TrainingManualSection';
 import FooterSection from '@/components/FooterSection';
+import MockTestSection from '@/components/MockTestSection';
 import { Users, BookOpen, Target, Award, RefreshCw, Shield } from 'lucide-react';
 
 export default function TrainingManualPage() {
@@ -470,6 +471,9 @@ export default function TrainingManualPage() {
           </div>
         </div>
       </section>
+
+      {/* Mock Test Section */}
+      <MockTestSection />
 
       {/* Training Showcase Section */}
       <TrainingShowcase />
