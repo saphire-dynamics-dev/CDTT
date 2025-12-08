@@ -63,11 +63,11 @@ export default function TrainingManualSection() {
       title: 'Tips & Tricks',
       description: 'Expert insights and memory techniques to help you retain information and apply it effectively during your test.'
     },
-    {
-      icon: Download,
-      title: 'Download & Print',
-      description: 'Access the manual in PDF format for offline learning. Print specific chapters or the entire manual as needed.'
-    }
+    // {
+    //   icon: Download,
+    //   title: 'Download & Print',
+    //   description: 'Access the manual in PDF format for offline learning. Print specific chapters or the entire manual as needed.'
+    // }
   ];
 
   return (
