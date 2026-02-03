@@ -23,7 +23,7 @@ export default function ProcessPage() {
             </p>
             
             <VideoPlayer 
-              src="/CDTT 2.mp4"
+              src="/CDTT 3.mp4"
               poster="/training.jpg" // Optional thumbnail
               autoPlay={false}
               controls={true}
@@ -41,3 +41,4 @@ export default function ProcessPage() {
     </>
   );
 }
+
