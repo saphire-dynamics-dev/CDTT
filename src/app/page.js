@@ -21,7 +21,18 @@ export default function Home() {
       <TrainingManualSection />
       {/* <FeaturesSection /> */}
       <ProcessSection />
-    document.body.innerHTML += '<video src="https://res.cloudinary.com/dkgystsn3/video/upload/v1770209978/cdtt-2_cxgoe2.mp4" controls width="600" style="margin:20px; border-radius:10px;"></video>';
+    <>  <video
+      autoPlay
+      loop
+      muted
+      playsInline
+      className="w-full h-auto rounded-xl object-cover"
+    >
+      <source
+        src="https://res.cloudinary.com/dkgystsn3/video/upload/v1770209978/cdtt-2_cxgoe2.mp4"
+        type="video/mp4"
+      />
+    </video></>
       <TestimonialsSection />
       <CTABannerSection />
       <FooterSection />
