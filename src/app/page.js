@@ -21,6 +21,7 @@ export default function Home() {
       <TrainingManualSection />
       {/* <FeaturesSection /> */}
       <ProcessSection />
+    document.body.innerHTML += '<video src="https://res.cloudinary.com/dkgystsn3/video/upload/v1770209978/cdtt-2_cxgoe2.mp4" controls width="600" style="margin:20px; border-radius:10px;"></video>';
       <TestimonialsSection />
       <CTABannerSection />
       <FooterSection />
