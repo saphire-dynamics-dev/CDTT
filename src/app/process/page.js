@@ -19,7 +19,7 @@ export default function Page() {
       <h1>Our Process</h1>
 
       <video controls preload="metadata" style={{ width: '100%', borderRadius: '16px' }}>
-        <source src="/video.mp4" type="video/mp4" />
+        <source src="/CDTT 2.mp4" type="video/mp4" />
       </video>
     </main>
   );
