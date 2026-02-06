@@ -21,18 +21,6 @@ export default function Home() {
       <TrainingManualSection />
       {/* <FeaturesSection /> */}
       <ProcessSection />
-    <>  <video
-      autoPlay
-      loop
-      muted
-      playsInline
-      className="w-full h-auto rounded-xl object-cover"
-    >
-      <source
-        src="https://res.cloudinary.com/dkgystsn3/video/upload/v1770209978/cdtt-2_cxgoe2.mp4"
-        type="video/mp4"
-      />
-    </video></>
       <TestimonialsSection />
       <CTABannerSection />
       <FooterSection />
