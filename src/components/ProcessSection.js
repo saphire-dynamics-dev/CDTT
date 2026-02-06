@@ -145,22 +145,22 @@ export default function ProcessSection() {
   return (
     <section ref={processRef} id="process" className="process-section py-24 px-6 bg-white">
       <div className="max-w-7xl mx-auto">
-     <>
-  <div className="w-full max-w-4xl mx-auto border border-gray-300 rounded-2xl shadow-lg p-2 bg-black">
-    <video
-      controls
-      autoPlay
-      loop
-      muted
-      playsInline
-      className="w-full h-auto rounded-xl object-cover"
-    >
-      <source
-        src="https://res.cloudinary.com/dkgystsn3/video/upload/v1770209978/cdtt-2_cxgoe2.mp4"
-        type="video/mp4"
-      />
-      Your browser does not support the video tag.
-    </video>
+  <>
+  <div className="w-full max-w-5xl mx-auto bg-black rounded-2xl shadow-2xl overflow-hidden">
+    {/* Aspect ratio wrapper (16:9 like YouTube) */}
+    <div className="relative w-full aspect-video">
+      <video
+        controls
+        playsInline
+        className="w-full h-full object-contain"
+      >
+        <source
+          src="https://res.cloudinary.com/dkgystsn3/video/upload/v1770209978/cdtt-2_cxgoe2.mp4"
+          type="video/mp4"
+        />
+        Your browser does not support the video tag.
+      </video>
+    </div>
   </div>
 </>
 
