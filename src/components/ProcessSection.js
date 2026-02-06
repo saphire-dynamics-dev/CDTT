@@ -145,6 +145,18 @@ export default function ProcessSection() {
   return (
     <section ref={processRef} id="process" className="process-section py-24 px-6 bg-white">
       <div className="max-w-7xl mx-auto">
+     <>  <video
+      autoPlay
+      loop
+      muted
+      playsInline
+      className="w-full h-auto rounded-xl object-cover"
+    >
+      <source
+        src="https://res.cloudinary.com/dkgystsn3/video/upload/v1770209978/cdtt-2_cxgoe2.mp4"
+        type="video/mp4"
+      />
+    </video></>
         {/* Driver Test Section */}
         <div className="mb-24">
           <div className="text-center mb-16">
