@@ -150,6 +150,7 @@ export default function ProcessSection() {
     {/* Aspect ratio wrapper (16:9 like YouTube) */}
     <div className="relative w-full aspect-video">
       <video
+        autoplay
         controls
         playsInline
         className="w-full h-full object-contain"
